@@ -4,6 +4,6 @@ int longueur(char *s)
     while (*s++)
     {
         res++;
-        return res;
     }
+    return res;
 }
