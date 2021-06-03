@@ -3,5 +3,6 @@
 
 int main()
 {
-    printf("addone(5)=%d\n", addone(5));
+    char c = "abc";
+    printf("longueur('abc')=%d\n", longueur(c));
 }
