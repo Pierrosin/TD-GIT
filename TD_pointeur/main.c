@@ -3,6 +3,5 @@
 
 int main()
 {
-    char c = "abc";
-    printf("longueur('abc')=%d\n", longueur(c));
+    printf("longueur('abc')=%d\n", longueur("abc"));
 }
