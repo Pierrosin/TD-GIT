@@ -18,4 +18,5 @@ int allouer_char(char c[])
         *(s + i) = c[i];
     }
     *(s + n) = '\0';
+    return (s);
 }
