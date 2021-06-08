@@ -1,5 +1,6 @@
 #include "date.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 Date *create_date(int day, int month, int year)
 {
