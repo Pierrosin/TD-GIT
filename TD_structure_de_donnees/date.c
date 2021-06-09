@@ -70,3 +70,15 @@ int compare_date(Date *date1, Date *date2)
     }
     return res;
 }
+
+Date *dupliquer_date(Date *date)
+{
+    Date *date2 = create_date(date->d, date->m, date->y);
+    return date2;
+}
+
+Person *dupliquer_person(Person *person)
+{
+    Person *person2 = create_person(person->nom, person->prenom, person->date);
+    return person2;
+}

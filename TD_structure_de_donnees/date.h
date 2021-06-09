@@ -25,4 +25,8 @@ void print_person(Person *person);
 
 int compare_date(Date *date1, Date *date2);
 
+Date *dupliquer_date(Date *date);
+
+Person *dupliquer_person(Person *person);
+
 #endif
