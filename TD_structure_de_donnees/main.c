@@ -12,4 +12,7 @@ void main()
     printf("%d %d\n", compare_date(date1, date2), compare_date(date1, date1));
     Person *pierrickbis = dupliquer_person(pierrick);
     print_person(pierrickbis);
+    List *list = create_list(date1);
+    List *list2 = insert(date2, list);
+    print_list(list2);
 }

@@ -29,4 +29,16 @@ Date *dupliquer_date(Date *date);
 
 Person *dupliquer_person(Person *person);
 
+typedef struct _List
+{
+    Date *head;
+    struct _List *next;
+} List;
+
+List *create_list(Date *date);
+
+List *insert(Date *date, List *list);
+
+void print_list(List *list);
+
 #endif

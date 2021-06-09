@@ -82,3 +82,32 @@ Person *dupliquer_person(Person *person)
     Person *person2 = create_person(person->nom, person->prenom, person->date);
     return person2;
 }
+
+List *create_list(Date *date)
+{
+    List *list = malloc(sizeof(List));
+    list->head = date;
+    list->next = NULL;
+    return list;
+}
+
+List *insert(Date *date, List *list)
+{
+    List *list2 = create_list(date);
+    list2->next = list;
+    return list2;
+}
+
+void print_list(List *list)
+{
+    Date *date = list->head;
+    printf("[ %d/%d/%d ", date->d, date->m, date->y);
+    list = list->next;
+    while (list)
+    {
+        Date *date = list->head;
+        printf(", %d/%d/%d ", date->d, date->m, date->y);
+        list = list->next;
+    }
+    printf("]\n");
+}
