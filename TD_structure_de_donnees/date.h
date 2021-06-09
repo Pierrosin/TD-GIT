@@ -23,4 +23,6 @@ Person *create_person(char *nom, char *prenom, Date *date);
 
 void print_person(Person *person);
 
+int compare_date(Date *date1, Date *date2);
+
 #endif
